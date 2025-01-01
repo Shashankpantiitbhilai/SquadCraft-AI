@@ -1,0 +1,13 @@
+/* CSS to make the CornerHelp component always visible above other elements */
+.corner-help {
+  position: fixed;
+  top: 10px; /* Adjust this for vertical positioning */
+  right: 10px; /* Adjust this for horizontal positioning */
+  z-index: 10000; /* Ensure it's above all other elements */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Add background for visibility */
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px; /* Adjust the font size as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for visibility */
+}

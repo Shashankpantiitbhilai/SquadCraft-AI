@@ -1,0 +1,338 @@
+.profile-wrapper {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #4a9eff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-header h1 {
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.avatar-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.avatar-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.avatar-container:hover .avatar-overlay {
+  transform: translateY(0);
+}
+
+.avatar-upload {
+  display: none;
+}
+
+.avatar-overlay label {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.input-field {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px;
+  color: black;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-field.editable {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #4a9eff;
+  box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.2);
+}
+
+textarea.input-field {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: flex-end;
+}
+
+.edit-btn, .save-btn, .cancel-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-btn {
+  background: linear-gradient(45deg, #4a9eff, #6c63ff);
+  color: rgb(0, 0, 0);
+  border: none;
+}
+
+.save-btn {
+  background: linear-gradient(45deg, #00c853, #69f0ae);
+  color: rgb(0, 0, 0);
+  border: none;
+}
+
+.cancel-btn {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 968px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .avatar-container {
+    margin: 0 auto;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    padding: 1rem;
+  }
+  
+  .profile-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .avatar-container {
+    width: 200px;
+    height: 200px;
+  }
+}
+.edit-btn, .save-btn, .cancel-btn {
+  padding: 0.75rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+/* Edit Button */
+.edit-btn {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.edit-btn:active {
+  transform: translateY(0);
+}
+
+/* Save Button */
+.save-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+
+.save-btn:active {
+  transform: translateY(0);
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+
+.cancel-btn:active {
+  transform: translateY(0);
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: flex-end;
+}
+
+/* Button Animation Effects */
+.edit-btn::before,
+.save-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+
+/* Disabled state */
+.edit-btn:disabled,
+.save-btn:disabled,
+.cancel-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .edit-btn, .save-btn, .cancel-btn {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* Optional: Add loading state animation */
+.button-loading {
+  position: relative;
+  cursor: wait;
+}
+
+
+@keyframes button-loading-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Optional: Add hover lift effect to all buttons */
+.edit-btn, .save-btn, .cancel-btn {
+  transform: translateY(0);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional: Add focus states */
+.edit-btn:focus,
+.save-btn:focus,
+.cancel-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.4);
+}
+
+/* Optional: Add subtle text shadow to button text */
+.edit-btn, .save-btn {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+*{
+  color:black;
+    color: white;
+}

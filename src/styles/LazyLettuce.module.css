@@ -1,0 +1,76 @@
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 16vw; /* Matches the .player-info width */
+  height: 50vh; /* Matches the .player-info height */
+  padding: 1vw; /* Reduced padding for a cleaner fit */
+  border-radius: 1rem; /* Consistent border-radius */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+  height: 100%;
+  /* width: 100%; */
+}
+
+.backgroundImage {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 90%;
+  object-fit: cover;
+  /* object-position:center; */
+  border-radius: 10%;
+  padding: 0px;
+  gap: 0%;
+}
+
+.profileImageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 8vw;
+  padding: 0.5vw;
+  background-color: #f0f0f0; /* Light background for the profile image */
+  box-shadow: 0 0.3vw 0.6vw rgba(231, 50, 50, 0.1); /* Subtle shadow */
+}
+.profileImage {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 50%; /* Same as wrapper */
+}
+
+.title {
+  color: #000000; /* Neutral text color */
+  font-size: 1.5vw; /* Reduced font size for proportional fit */
+  font-family: "Orelega One", sans-serif;
+  text-align: center; /* Center-align text */
+}
+
+.statsContainer {
+  background-color: #000000;
+  border-radius: 1vw; /* Adjusted for consistency */
+  padding: 0.6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh; /* Spacing between stats */
+  color: #ffffff; /* Neutral text color */
+  font-size: 1.2vw; /* Smaller font size */
+  margin-bottom: 1vh;
+}
+
+.info {
+  color: #f0f0f0;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+  background-color: rgb(95, 42, 240);
+  border-radius: 0.6rem;
+}

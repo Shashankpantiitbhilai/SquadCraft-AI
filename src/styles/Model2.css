@@ -1,0 +1,171 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+/* Table section */
+.table-section {
+  flex: 0.7; /* Takes 70% of the viewport height */
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.table-title {
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  color: #1a237e;
+  margin-bottom: 1rem !important;
+  text-align: left !important;
+  padding-left: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* DataGrid specific styles */
+.MuiDataGrid-root {
+  border: none !important;
+  flex: 1;
+  overflow: auto !important;
+}
+
+.MuiDataGrid-virtualScroller {
+  overflow-y: auto !important;
+}
+
+/* Metrics section */
+.metrics-section {
+  flex: 0.3; /* Takes 30% of the viewport height */
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top metrics */
+.top-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.metric-box {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  border-radius: 12px;
+  padding: 1rem;
+  color: white;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+}
+
+.metric-title {
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.metric-value {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: white !important;
+}
+
+/* Bottom metrics */
+.bottom-metrics {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  flex: 1;
+  min-height: 0; /* Important for flex children */
+}
+
+.training-progress {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progress-title {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: white !important;
+  margin-bottom: 1rem !important;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #22c55e;
+  border-radius: 6px;
+}
+
+.metrics-button {
+  background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(244, 63, 94, 0.3);
+}
+
+.other-metrics-button {
+  width: 100%;
+  height: 100%;
+  background: transparent !important;
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+  text-transform: none !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .top-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bottom-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .top-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-box {
+    height: auto;
+  }
+}

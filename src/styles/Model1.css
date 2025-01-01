@@ -1,0 +1,276 @@
+/* Sidebar styles */
+html,
+body {
+  height: 100%;
+  margin: 0; /* Remove default margin */
+}
+
+.sidebar {
+  width: 20%;
+  color: black;
+  background-color: #d39fe2;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  height: 100vh;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Adds shadow for better separation */
+}
+
+/* Form controls inside the sidebar */
+.sidebar .form-control {
+  margin-bottom: 16px;
+}
+
+/* Button styles */
+.sidebar .train-button {
+  background-color: #6846c5;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.sidebar .train-button:hover {
+  background-color: #593ca8;
+}
+
+/* Main content area (table container) */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+/* Table title */
+.main-content .table-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Table container */
+.table-container {
+  height: 90%;
+  width: 100%;
+  overflow-x: auto; /* Only horizontal scroll for the table */
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow around the table */
+}
+
+/* Styling for the DataGrid (optional, but can be customized here) */
+.MuiDataGrid-root {
+  font-family: Arial, sans-serif; /* Example font */
+}
+
+.MuiDataGrid-columnHeaders {
+  background-color: #e3f2fd; /* Header background color */
+  color: #1976d2; /* Header text color */
+  font-weight: bold; /* Make column headers stand out */
+}
+
+.MuiDataGrid-cell:hover {
+  color: #1976d2; /* Highlight color for cell hover */
+}
+/* Add a fixed position image at the bottom of the sidebar */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+}
+
+.sidebar {
+  background-color: #4a148c;
+  color: white;
+  width: 20vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh; /* Full height */
+  box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.1); /* Sidebar shadow */
+  position: sticky;
+  top: 0;
+}
+
+/* Typography styling for sidebar headings */
+.inputabout {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Form Control styling */
+.form-control {
+  margin-bottom: 16px; /* Slightly darker purple */
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.form-control label {
+  font-size: 16px;
+  color: white;
+}
+
+.datepicker-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.datepicker-input:focus {
+  outline: none;
+  border: 2px solid #4a148c; /* Purple border on focus */
+}
+
+/* Button styling */
+.train-button {
+  background-color: #7e57c2; /* Lighter purple for button */
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.train-button:hover {
+  background-color: #512da8; /* Darken on hover */
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+/* Table title styling */
+.table-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #4a148c; /* Purple color */
+  margin-bottom: 16px;
+}
+
+/* Table container styling */
+.table-container {
+  padding: 10px;
+  background-color: #f4f6f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.table-container table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  * {
+    font-size: small;
+  }
+  .sidebar {
+    width: 40vw;
+    height: auto;
+    padding: 15px;
+  }
+
+  .train-button {
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  .table-title {
+    font-size: 20px;
+  }
+
+  /* Adjust DataGrid container for smaller screens */
+  .table-container {
+    padding: 10px;
+    overflow-x: auto; /* Enable horizontal scroll for the table */
+  }
+
+  /* Adjust font size for DataGrid */
+  .MuiDataGrid-root {
+    font-size: 12px; /* Smaller font size on mobile */
+  }
+
+  /* Adjust column width for mobile */
+  .MuiDataGrid-columnHeaders {
+    font-size: 14px; /* Smaller header font on mobile */
+  }
+
+  /* Adjust cell padding for better fit */
+  .MuiDataGrid-cell {
+    padding: 8px; /* Less padding for smaller screens */
+  }
+
+  .MuiDataGrid-columnHeaderTitle {
+    font-size: 14px; /* Smaller header font size on mobile */
+  }
+}
+.sidebar-graph {
+  margin-top: 1rem;
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/* Train Button Enhanced */
+.train-button {
+  /* position: relative; */
+
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.train-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: all 0.5s ease;
+}
+
+.train-button:hover::before {
+  left: 100%;
+}
+
+.train-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(126, 87, 194, 0.4);
+}

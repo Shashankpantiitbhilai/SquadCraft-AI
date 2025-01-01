@@ -1,0 +1,253 @@
+.page-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://cdn.pixabay.com/photo/2022/06/12/22/48/gradient-7258997_1280.png");
+  background-size: cover;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.content-wrapper {
+  width: 95%;
+  height: 90vh;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.typewriter-section {
+  flex: 1;
+  color: white;
+  text-align: left;
+  padding-left: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-text {
+  font-size: 3.5rem;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtext {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 400px;
+}
+
+.login-box {
+  flex: 1;
+  height: 80vh;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.login-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.login-box::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.login-box::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.login-title {
+  color: white;
+  margin: 0 0 30px 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .content-wrapper {
+    height: auto;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .typewriter-section {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .login-box {
+    height: auto;
+    max-height: 60vh;
+  }
+
+  .main-text {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-text {
+    font-size: 2.5rem;
+  }
+
+  .login-box {
+    padding: 20px;
+    max-height: 55vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-wrapper {
+    padding: 15px;
+  }
+
+  .main-text {
+    font-size: 2rem;
+  }
+
+  .login-box {
+    padding: 15px;
+    max-height: 50vh;
+  }
+}
+
+/* Update these CSS rules in your SignUp.css */
+
+.login-box {
+  flex: 1;
+  height: auto; /* Remove fixed height */
+  overflow-y: visible; /* Remove scroll */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px; /* Slightly reduced padding */
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: black;
+}
+
+/* Adjust form group spacing */
+.login-form .form-group {
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+/* Adjust input padding */
+.form-input {
+  padding: 10px; /* Slightly reduced padding */
+}
+
+/* Adjust title margin */
+.login-title {
+  margin: 0 0 20px 0; /* Reduced margin */
+  font-size: 2.2rem; /* Slightly smaller font */
+}
+
+/* Add these new styles for form elements */
+.form-options {
+  margin: 10px 0;
+}
+
+.social-divider {
+  margin: 15px 0;
+  position: relative;
+  text-align: center;
+}
+
+.social-divider span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0 10px;
+  color: white;
+}
+
+/* Button styles */
+.login-button,
+.guest-button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Update media queries */
+@media screen and (max-width: 1200px) {
+  .login-box {
+    height: auto;
+    max-height: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-box {
+    padding: 20px;
+    height: auto;
+    max-height: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-box {
+    padding: 15px;
+    height: auto;
+    max-height: none;
+  }
+}
+
+/* Remove all scrollbar related styles */
+.login-box::-webkit-scrollbar {
+  display: none;
+}
