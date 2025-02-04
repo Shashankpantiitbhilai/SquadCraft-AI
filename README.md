@@ -1,4 +1,4 @@
-# Fantasy Team Recommender for Dream11
+# SquadCraft AI
 
 ## Project Overview
 
