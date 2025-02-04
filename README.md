@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project aims to develop an AI-powered Fantasy Cricket Team Recommender for Dream11, which helps users build optimal fantasy cricket teams based on historical data, player performance predictions, and match-specific contextual factors. The tool leverages machine learning techniques, such as GRU-based models, to predict player performance and generate teams with high chances of success in upcoming fantasy sports games.
+This project aims to develop an AI-powered Fantasy Cricket Team Recommender , which helps users build optimal fantasy cricket teams based on historical data, player performance predictions, and match-specific contextual factors. The tool leverages machine learning techniques, such as GRU-based models, to predict player performance and generate teams with high chances of success in upcoming fantasy sports games.
 
 ### Key Features:
 - **Predictive Machine Learning Model:** GRU-based model to forecast player performance for upcoming matches.
