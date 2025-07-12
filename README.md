@@ -55,6 +55,124 @@
 </tr>
 </table>
 
+## 🎮 Product UI Showcase
+
+<div align="center">
+
+### **✨ Interactive User Interface Experience**
+
+*Beautiful, intuitive design with real-time AI guidance for optimal team selection*
+
+</div>
+
+### 🏠 **Landing Page & Team Setup**
+
+<div align="center">
+
+<img src="images/landing-page.png" alt="SquadCraft AI Landing Page" width="800">
+
+**🎯 Landing Page** - Clean, modern interface with intuitive team setup options
+
+</div>
+
+### 👥 **Team Selection Interface**
+
+<table>
+<tr>
+<td width="50%">
+
+<img src="images/team-selection.png" alt="Team Selection Interface" width="400">
+
+**🏏 Team Selection** - Interactive player selection with real-time recommendations
+
+</td>
+<td width="50%">
+
+<img src="images/player-stats.png" alt="Player Statistics" width="400">
+
+**📊 Player Statistics** - Comprehensive stats and performance metrics
+
+</td>
+</tr>
+</table>
+
+### 📈 **Match Analysis & Predictions**
+
+<div align="center">
+
+<img src="images/match-analysis.png" alt="Match Analysis Dashboard" width="800">
+
+**🔍 Match Analysis** - AI-powered match context analysis with weather, venue, and historical data
+
+</div>
+
+### 🎯 **Predictions Dashboard**
+
+<table>
+<tr>
+<td width="50%">
+
+<img src="images/predictions-dashboard.png" alt="Predictions Dashboard" width="400">
+
+**🤖 AI Predictions** - Real-time performance forecasts with confidence intervals
+
+</td>
+<td width="50%">
+
+<img src="images/model-interface.png" alt="Model Interface" width="400">
+
+**🔬 Model Interface** - Advanced analytics for power users and analysts
+
+</td>
+</tr>
+</table>
+
+### 🏆 **Final Team Composition**
+
+<div align="center">
+
+<img src="images/final-team.png" alt="Final Team Composition" width="800">
+
+**✅ Final Team** - Optimized 11-player team with detailed explanations and expected points
+
+</div>
+
+### 🎨 **UI/UX Features**
+
+<table>
+<tr>
+<td width="33%">
+
+#### **🎯 User-Centric Design**
+- 🎨 **Modern Interface** with intuitive navigation
+- 📱 **Responsive Design** for all devices  
+- ⚡ **Fast Loading** with optimized performance
+- 🎭 **Interactive Elements** with smooth animations
+
+</td>
+<td width="33%">
+
+#### **🧠 AI Integration**
+- 🤖 **Real-time Recommendations** as you select
+- 💡 **Explainable Suggestions** with reasoning
+- 📊 **Visual Analytics** with interactive charts
+- 🎵 **Audio Guidance** for accessibility
+
+</td>
+<td width="33%">
+
+#### **📊 Data Visualization**
+- 📈 **Performance Graphs** with trends
+- 🎯 **Confidence Indicators** for predictions
+- 🏟️ **Match Context** visualization
+- 🔄 **Real-time Updates** during selection
+
+</td>
+</tr>
+</table>
+
+---
+
 ### 🧠 **Explainable AI Features**
 - **📊 Player Impact Analysis**: Understanding why each player is recommended
 - **📈 Performance Trends**: Historical performance patterns and predictions
@@ -181,124 +299,6 @@ Model: Sequential
 - 📈 **Recent Form**: Last 10 matches performance
 
 </details>
-
----
-
-## 🎮 Product UI Showcase
-
-<div align="center">
-
-### **✨ Interactive User Interface Experience**
-
-*Beautiful, intuitive design with real-time AI guidance for optimal team selection*
-
-</div>
-
-### 🏠 **Landing Page & Team Setup**
-
-<div align="center">
-
-<img src="images/landing-page.png" alt="SquadCraft AI Landing Page" width="800">
-
-**🎯 Landing Page** - Clean, modern interface with intuitive team setup options
-
-</div>
-
-### 👥 **Team Selection Interface**
-
-<table>
-<tr>
-<td width="50%">
-
-<img src="images/team-selection.png" alt="Team Selection Interface" width="400">
-
-**🏏 Team Selection** - Interactive player selection with real-time recommendations
-
-</td>
-<td width="50%">
-
-<img src="images/player-stats.png" alt="Player Statistics" width="400">
-
-**📊 Player Statistics** - Comprehensive stats and performance metrics
-
-</td>
-</tr>
-</table>
-
-### 📈 **Match Analysis & Predictions**
-
-<div align="center">
-
-<img src="images/match-analysis.png" alt="Match Analysis Dashboard" width="800">
-
-**🔍 Match Analysis** - AI-powered match context analysis with weather, venue, and historical data
-
-</div>
-
-### 🎯 **Predictions Dashboard**
-
-<table>
-<tr>
-<td width="50%">
-
-<img src="images/predictions-dashboard.png" alt="Predictions Dashboard" width="400">
-
-**🤖 AI Predictions** - Real-time performance forecasts with confidence intervals
-
-</td>
-<td width="50%">
-
-<img src="images/model-interface.png" alt="Model Interface" width="400">
-
-**🔬 Model Interface** - Advanced analytics for power users and analysts
-
-</td>
-</tr>
-</table>
-
-### 🏆 **Final Team Composition**
-
-<div align="center">
-
-<img src="images/final-team.png" alt="Final Team Composition" width="800">
-
-**✅ Final Team** - Optimized 11-player team with detailed explanations and expected points
-
-</div>
-
-### 🎨 **UI/UX Features**
-
-<table>
-<tr>
-<td width="33%">
-
-#### **🎯 User-Centric Design**
-- 🎨 **Modern Interface** with intuitive navigation
-- 📱 **Responsive Design** for all devices  
-- ⚡ **Fast Loading** with optimized performance
-- 🎭 **Interactive Elements** with smooth animations
-
-</td>
-<td width="33%">
-
-#### **🧠 AI Integration**
-- 🤖 **Real-time Recommendations** as you select
-- 💡 **Explainable Suggestions** with reasoning
-- 📊 **Visual Analytics** with interactive charts
-- 🎵 **Audio Guidance** for accessibility
-
-</td>
-<td width="33%">
-
-#### **📊 Data Visualization**
-- 📈 **Performance Graphs** with trends
-- 🎯 **Confidence Indicators** for predictions
-- 🏟️ **Match Context** visualization
-- 🔄 **Real-time Updates** during selection
-
-</td>
-</tr>
-</table>
 
 ---
 
